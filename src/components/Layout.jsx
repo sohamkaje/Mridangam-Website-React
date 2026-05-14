@@ -5,6 +5,7 @@ import './Layout.css'
 const navLinks = [
   { to: '/', end: true, label: 'Home' },
   { to: '/lessons', label: 'Lessons' },
+  { to: '/history', label: 'History' },
   { to: '/korvai-ai', label: 'Korvai AI' },
   { to: '/about', label: 'About' },
 ]

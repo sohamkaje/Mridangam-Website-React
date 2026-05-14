@@ -5,6 +5,7 @@ import LessonsPage from './pages/LessonsPage'
 import LessonTopicPage from './pages/LessonTopicPage'
 import KorvaiAIPage from './pages/KorvaiAIPage'
 import AboutPage from './pages/AboutPage'
+import HistoryPage from './pages/HistoryPage'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="lessons" element={<LessonsPage />} />
         <Route path="lessons/:topicSlug" element={<LessonTopicPage />} />
+        <Route path="history" element={<HistoryPage />} />
         <Route path="korvai-ai" element={<KorvaiAIPage />} />
         <Route path="about" element={<AboutPage />} />
       </Route>

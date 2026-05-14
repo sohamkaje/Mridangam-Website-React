@@ -2,6 +2,10 @@
   max-width: 52rem;
 }
 
+.page--wide {
+  max-width: 56rem;
+}
+
 .page-header {
   margin-bottom: 2rem;
 }
@@ -272,6 +276,84 @@
   border-radius: 4px;
   background: var(--color-surface-elevated);
   border: 1px solid var(--color-border);
+}
+
+.prose--history {
+  margin-bottom: 1.25rem;
+}
+
+.prose__h2 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+  color: var(--color-text);
+}
+
+.prose__h2:first-child {
+  margin-top: 0;
+}
+
+.prose--footnote {
+  margin: 0 0 1.5rem;
+}
+
+.prose--footnote small {
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-elevated);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.data-table__caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.data-table th {
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-surface-hover);
+}
+
+.data-table tbody tr:last-child th,
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td {
+  color: var(--color-text-muted);
+}
+
+.data-table td:first-child {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--color-text);
 }
 
 .button {
