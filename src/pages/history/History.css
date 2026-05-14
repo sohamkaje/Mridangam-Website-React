@@ -1,0 +1,27 @@
+.history-shell__header {
+  margin-bottom: 1.5rem;
+}
+
+.history-shell__intro {
+  margin-bottom: 1.25rem;
+}
+
+.history-section {
+  padding-top: 0.25rem;
+}
+
+.history-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.history-section__lead {
+  margin: 0 0 1.25rem;
+  font-size: 1.02rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 44rem;
+}

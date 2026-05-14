@@ -294,6 +294,14 @@
   margin-top: 0;
 }
 
+.prose__h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--color-text);
+}
+
 .prose--footnote {
   margin: 0 0 1.5rem;
 }
@@ -389,4 +397,69 @@
 .button--ghost:hover {
   border-color: var(--color-accent-muted);
   background: var(--color-surface-hover);
+}
+
+.lesson-section {
+  margin-top: 2rem;
+}
+
+.lesson-section:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.lesson-section__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--color-text);
+}
+
+.lesson-section__blurb {
+  margin: 0 0 0.75rem;
+  max-width: 46rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.syllable-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0 0 0.25rem;
+  padding: 0;
+}
+
+.syllable-pill-list li {
+  margin: 0;
+}
+
+.syllable-pill {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.86rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+}
+
+.sollu-row {
+  margin: 0 0 0.65rem;
+  padding: 0.55rem 0.75rem;
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-elevated);
+  color: var(--color-text-muted);
+  overflow-x: auto;
+}
+
+.lesson-back {
+  margin-top: 2rem;
 }
