@@ -18,6 +18,14 @@
   z-index: 10;
 }
 
+.site-header__end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem 1.5rem;
+}
+
 .site-brand {
   display: flex;
   flex-direction: column;

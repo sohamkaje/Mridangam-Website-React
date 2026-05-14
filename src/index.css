@@ -31,6 +31,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html[data-theme='dark'] {
+  --color-bg: #141210;
+  --color-surface: #1c1916;
+  --color-surface-elevated: #242019;
+  --color-surface-hover: #2e2924;
+  --color-text: #f4ede5;
+  --color-text-muted: #a89b90;
+  --color-border: #3d342c;
+  --color-accent: #e07a66;
+  --color-accent-hover: #ea9484;
+  --color-accent-muted: #c4675a;
+  --color-accent-contrast: #1c0f0c;
+}
+
 *,
 *::before,
 *::after {

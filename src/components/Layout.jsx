@@ -1,4 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 import './Layout.css'
 
 const navLinks = [
@@ -16,23 +17,26 @@ export default function Layout() {
           <span className="site-brand__title">Mridangam</span>
           <span className="site-brand__tagline">rhythm & lessons</span>
         </NavLink>
-        <nav className="site-nav" aria-label="Main">
-          <ul>
-            {navLinks.map(({ to, end, label }) => (
-              <li key={to}>
-                <NavLink
-                  to={to}
-                  end={end}
-                  className={({ isActive }) =>
-                    isActive ? 'site-nav__link site-nav__link--active' : 'site-nav__link'
-                  }
-                >
-                  {label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="site-header__end">
+          <nav className="site-nav" aria-label="Main">
+            <ul>
+              {navLinks.map(({ to, end, label }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    end={end}
+                    className={({ isActive }) =>
+                      isActive ? 'site-nav__link site-nav__link--active' : 'site-nav__link'
+                    }
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <ThemeToggle />
+        </div>
       </header>
 
       <main className="site-main">

@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom'
+// Replace these imports with your own images (e.g. .jpg / .webp) from this folder when ready.
+import imgMridangamWide from '../assets/images/home-mridangam-wide.svg'
+import imgMridangamClose from '../assets/images/home-mridangam-close.svg'
 import './Page.css'
 
 export default function HomePage() {
@@ -17,6 +20,54 @@ export default function HomePage() {
           <Link to="/korvai-ai" className="button button--ghost">
             Korvai AI (preview)
           </Link>
+        </div>
+      </section>
+
+      <section className="section section--instrument" aria-labelledby="instrument-heading">
+        <h2 id="instrument-heading" className="section__title">
+          What is the mridangam?
+        </h2>
+        <div className="instrument-block">
+          <div className="instrument-block__text prose">
+            <p>
+              The <strong>mridangam</strong> (also spelled mridangam) is a double-headed barrel drum from
+              South India. It is the principal percussion instrument in{' '}
+              <strong>Carnatic classical music</strong>, where it supports the melody, marks the tala
+              (time cycle), and shapes the energy of a concert through solos, korvais, and rhythmic dialogue
+              with other artists.
+            </p>
+            <p>
+              The two faces are tuned differently: the larger bass side (thoppi / eda bage) and the smaller,
+              higher-pitched right side (valanthal / vala bage) where most fingering patterns are played.
+              Skins are stretched with straps and paste (soru / maida) is applied to get the characteristic
+              pitch and timbre. Playing combines hand strokes, finger rolls, and palm work to produce a wide
+              vocabulary of sounds used in compositions and improvisation.
+            </p>
+          </div>
+          <div className="instrument-gallery">
+            <figure className="instrument-gallery__figure instrument-gallery__figure--wide">
+              <img
+                src={imgMridangamWide}
+                alt="Mridangam instrument (replace this image in src/assets/images)"
+                className="instrument-gallery__img"
+                width={960}
+                height={540}
+                loading="lazy"
+              />
+              <figcaption className="instrument-gallery__caption">Wide shot — swap file in assets and update import.</figcaption>
+            </figure>
+            <figure className="instrument-gallery__figure">
+              <img
+                src={imgMridangamClose}
+                alt="Mridangam detail (replace this image in src/assets/images)"
+                className="instrument-gallery__img"
+                width={640}
+                height={640}
+                loading="lazy"
+              />
+              <figcaption className="instrument-gallery__caption">Detail or playing angle — same folder.</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
