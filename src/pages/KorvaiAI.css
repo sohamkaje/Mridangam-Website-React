@@ -1,0 +1,450 @@
+.korvai-form {
+  margin-bottom: 1.5rem;
+}
+
+.korvai-form__grid {
+  display: grid;
+  gap: 1rem 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  margin-bottom: 1.25rem;
+}
+
+.korvai-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.korvai-field--wide {
+  grid-column: 1 / -1;
+}
+
+.korvai-field__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.korvai-field select,
+.korvai-field input {
+  padding: 0.5rem 0.65rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.korvai-field__hint {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.korvai-field__hint-btn {
+  align-self: flex-start;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.korvai-field__hint-btn:hover {
+  color: var(--color-accent-hover);
+}
+
+.korvai-form__submit {
+  margin-top: 0.25rem;
+}
+
+.korvai-explainer {
+  margin-bottom: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-elevated);
+}
+
+.korvai-explainer summary {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.korvai-explainer .prose {
+  padding: 0 1rem 1rem;
+}
+
+.korvai-output {
+  margin-top: 1.5rem;
+}
+
+.korvai-errors {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-accent-muted);
+  background: var(--color-surface-hover);
+}
+
+.korvai-errors p {
+  margin: 0 0 0.5rem;
+  color: var(--color-text);
+}
+
+.korvai-summary p {
+  margin: 0 0 0.65rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.korvai-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.korvai-results {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .korvai-results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.korvai-result {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  background: var(--color-surface-elevated);
+}
+
+.korvai-result__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.korvai-result__formula {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.85rem;
+  color: var(--color-accent);
+}
+
+.korvai-result__segments {
+  list-style: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.korvai-seg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--color-border);
+}
+
+.korvai-seg--pattern {
+  border-left-color: var(--color-accent);
+  background: var(--color-surface-hover);
+}
+
+.korvai-seg--kaarvai {
+  border-left-color: var(--color-text-muted);
+}
+
+.korvai-seg__meta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.korvai-seg__count {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.korvai-result__counts-line {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.9rem;
+  margin: 0 0 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.korvai-talam {
+  margin-top: 0.75rem;
+}
+
+.korvai-output > .korvai-talam {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-elevated);
+}
+
+.korvai-talam__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: var(--color-text-muted);
+}
+
+.korvai-talam__line {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.88rem;
+  margin: 0 0 0.65rem;
+}
+
+.korvai-talam__grid-wrap {
+  overflow-x: auto;
+}
+
+.korvai-talam__avartanam {
+  margin-bottom: 0.75rem;
+}
+
+.korvai-talam__av-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: var(--color-text-muted);
+}
+
+.korvai-talam__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.korvai-talam__table th,
+.korvai-talam__table td {
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.4rem;
+  text-align: center;
+}
+
+.korvai-talam__corner,
+.korvai-talam__row-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-surface-hover);
+}
+
+.korvai-talam__cell--pattern {
+  background: var(--color-surface-hover);
+  font-weight: 600;
+}
+
+.korvai-talam__cell--kaarvai {
+  color: var(--color-text-muted);
+}
+
+.korvai-talam__hint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: 0.35rem 0 0;
+  line-height: 1.45;
+}
+
+.korvai-seg__sollu {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.korvai-result__sollu-line {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.korvai-result__note {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.korvai-footer-note {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.korvai-ollama-setup {
+  margin-bottom: 1.5rem;
+}
+
+.korvai-ollama-setup__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.korvai-ollama-setup__text {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.korvai-ollama-setup__steps {
+  margin: 0 0 0.85rem;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.korvai-ollama-setup__steps li {
+  margin-bottom: 0.35rem;
+}
+
+.korvai-ollama-setup__error {
+  margin: 0 0 0.75rem;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-accent-muted);
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.korvai-ollama-setup__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.korvai-ollama-setup__btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.korvai-ollama-status {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.korvai-ollama-status--ok {
+  color: #2d6a4f;
+}
+
+html[data-theme='dark'] .korvai-ollama-status--ok {
+  color: #95d5b2;
+}
+
+.korvai-ollama-status--bad {
+  color: var(--color-accent);
+}
+
+.korvai-ollama-status--wait {
+  color: var(--color-text-muted);
+}
+
+.korvai-field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.korvai-field--inline input {
+  width: auto;
+}
+
+.korvai-provider-picker {
+  border: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+}
+
+.korvai-provider-picker legend {
+  margin-bottom: 0.5rem;
+}
+
+.korvai-provider-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.korvai-llm {
+  margin-top: 1.75rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-elevated);
+}
+
+.korvai-llm__title {
+  font-family: var(--font-display);
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.korvai-llm__status {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.korvai-llm__hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.korvai-llm__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.korvai-llm__body h3:first-child {
+  margin-top: 0;
+}
+
+.korvai-llm__body h4 {
+  font-size: 0.98rem;
+  margin: 1rem 0 0.4rem;
+}
+
+.korvai-llm__body p,
+.korvai-llm__body li {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.korvai-llm__body ul {
+  margin: 0 0 0.75rem;
+  padding-left: 1.25rem;
+}

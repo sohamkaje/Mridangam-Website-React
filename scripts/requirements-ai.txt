@@ -1,0 +1,3 @@
+ollamafreeapi
+fastapi
+uvicorn[standard]

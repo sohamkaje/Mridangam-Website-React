@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "python scripts/run_dev.py",
+    "dev:site": "vite",
+    "dev:ai": "python scripts/ollamafree-proxy.py",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
